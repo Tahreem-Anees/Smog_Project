@@ -1,3 +1,7 @@
+# Module: Exploratory Data Analysis (EDA) 
+# Developed & Maintained by: Sehrish Imran (Roll No. 198) & Tahreem Anees 
+
+
 import sqlite3
 from pathlib import Path
 
