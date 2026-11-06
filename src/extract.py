@@ -1,6 +1,5 @@
 # Module: Open-Meteo Weather & Air Quality API Ingestion (4-Year Data Extraction )
 # Developed & Maintained by: Noor Fatima (Roll No. 189)
-
 import time
 from datetime import date, timedelta
 
