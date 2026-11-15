@@ -14,8 +14,8 @@ that a next-day PM2.5 forecasting model needs.
 
 | Member | Responsibility |
 |---|---|
-| Tahreem Anees | Overall architecture and pipeline flow, Streamlit dashboards, GitHub and deployment, |EDA (together with Sehrish)
-| Sehrish Imran | Exploratory data analysis (EDA),together with Tahreem |
+| Tahreem Anees | Overall architecture and pipeline flow, Streamlit dashboards, GitHub and deployment. EDA: daily trend, smog seasons, weather relationships, autocorrelation and baseline (7 charts) |
+| Sehrish Imran | EDA: time patterns (monthly, season, hourly, weekday), distributions, rows per year (7 charts) |
 | Noor Fatima | Data extraction from the APIs and Pydantic validation |
 | Fatima Khurram | Loading into SQLite and data cleaning |
 
