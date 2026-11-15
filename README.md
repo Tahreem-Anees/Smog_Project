@@ -1,4 +1,4 @@
-# Smog (PM2.5) Forecast: ETL and EDA Pipeline (Section 1)
+# Smog (PM2.5) Forecast: ETL and EDA Pipeline
 
 Programming for AI, Project 1 (ETL + EDA). University of Engineering and Technology (UET) Lahore.
 
@@ -7,8 +7,8 @@ Programming for AI, Project 1 (ETL + EDA). University of Engineering and Technol
 ## Problem
 
 Smog is a serious health issue in Pakistani cities, especially in winter, but ground-sensor
-coverage is limited. This section builds the data pipeline and the exploratory analysis for a
-next-day PM2.5 forecasting model (Sections 2 and 3).
+coverage is limited. This project builds the data pipeline (ETL) and the exploratory analysis (EDA)
+that a next-day PM2.5 forecasting model needs.
 
 ## Team
 
@@ -136,8 +136,3 @@ more rows than the numbers above.
 
 The team used an AI assistant (Claude) while building the code. Every member ran the pipeline,
 reviewed the code of their own part, and is responsible for explaining it.
-
-## Next sections
-
-- Section 2: scikit-learn pipeline for next-day PM2.5 forecasting
-- Section 3: PyTorch model with MLflow experiment tracking
