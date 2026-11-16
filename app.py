@@ -49,14 +49,13 @@ h2, h3, h4 {color: #134e4a;}
 )
 
 # ---------- Your own observations, shown under each group of charts ----------
-# Fill these in your own words after you have understood the charts.
-# Empty text is simply not shown on the page.
+# Notes shown under each group of charts.
 NOTES = {
-    "daily": {"see": "", "so_what": ""},
-    "seasons": {"see": "", "so_what": ""},
+        "daily": {"see": "On the default 7-day view, Lahore is far above the other three cities, with a peak of about 219 in January 2026, while Islamabad, Karachi and Peshawar peak at only 78 to 86. All four lines stay above the WHO line of 15 almost all the time. The highest points of Lahore, Islamabad and Peshawar fall inside the grey smog season, but Karachi peaks in March 2023, outside it.", "so_what": "Pollution clearly follows the season and Lahore behaves very differently from the other cities, so a forecasting model should know the month or season and may need to treat Lahore separately."},
+    "seasons": {"see": "In every smog season (October to January) Lahore averages about 100 to 115 µg/m³, more than double the other cities at about 34 to 50. All four cities improved in 2023/24, then Lahore, Islamabad and Peshawar rose again, so there is no steady improvement. From the first season to the last, Karachi fell by 26 percent, Lahore by 4 percent, while Islamabad and Peshawar rose by 2 and 7 percent. By month, Lahore is highest in January (about 140) and lowest in April (about 36), while Karachi stays flat between about 21 and 43. By season, Lahore averages 111 in winter and only 43 in spring.", "so_what": "The bad months repeat every year (November to January for Lahore), so month or season is a strong input for the forecasting model."},
     "time": {"see": "", "so_what": ""},
-    "weather": {"see": "", "so_what": ""},
-    "lag": {"see": "", "so_what": ""},
+        "weather": {"see": "In Lahore, PM2.5 has the strongest links with weather: temperature -0.57 (colder hours have more PM2.5), humidity +0.45, pressure +0.44 and wind speed -0.31. Islamabad and Peshawar show the same directions but weaker (temperature about -0.27 and humidity 0.30 to 0.38). Karachi is different: its humidity link is negative (-0.26), while its pressure link (+0.34) is stronger than in Islamabad and Peshawar (+0.14).", "so_what": "Temperature, humidity and pressure all change with the season, so these links do not prove cause. They are useful inputs for forecasting, especially for Lahore, but weather alone will not explain PM2.5."},
+    "lag": {"see": "Yesterday is a good guide to today: the daily correlation with the previous day is 0.89 for Lahore, 0.83 for Islamabad, 0.80 for Peshawar and 0.77 for Karachi, but it falls to between 0.37 and 0.53 after 14 days. Guessing that tomorrow equals today gives an average error of 13.5 µg/m³ in Lahore and 6.1 to 6.5 in the other cities.", "so_what": "This simple guess is the baseline, so a forecasting model must make a smaller error than this to be worth using. Lahore has the largest error, partly because its PM2.5 levels are much higher."},
     "distributions": {"see": "", "so_what": ""},
 }
 
