@@ -54,10 +54,10 @@ h2, h3, h4 {color: #134e4a;}
 NOTES = {
     "daily": {"see": "", "so_what": ""},
     "seasons": {"see": "", "so_what": ""},
-    "time": {"see": "", "so_what": ""},
+    "time": {"see": "PM2.5 is not flat during the day. In Islamabad, Lahore and Peshawar it is highest late at night (about 10 to 11 pm) and lowest in the early morning or afternoon. Lahore swings the most, from about 46 at its lowest hour to about 87 at its highest. Karachi is much calmer (about 26 to 33). The day-of-week bars are almost equal in every city.", "so_what": "Time of day matters for prediction, so hour should be a feature in the model. Day of week adds almost nothing, because the difference between days is only a few units. For health advice, late evening and night are the worst times to be outside in Lahore."},
     "weather": {"see": "", "so_what": ""},
     "lag": {"see": "", "so_what": ""},
-    "distributions": {"see": "", "so_what": ""},
+    "distributions": {"see": "All four cities are right-skewed: most hours have moderate PM2.5, but a few hours are very high. Lahore has the widest box (middle 50% from about 37 to 86) and the highest median (about 55). Karachi has a low median (about 25) but one extreme value of about 449. In every city, more than 90% of hours are above the WHO guideline of 15.", "so_what": "Because of the long tail, the average is pulled up by extreme hours, so the median describes a typical hour better. The extreme values should be checked, not just deleted, because they may be real smog events. Air quality is above the WHO limit almost all the time, not only on bad days."},
 }
 
 
