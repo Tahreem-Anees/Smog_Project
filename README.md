@@ -104,7 +104,8 @@ Smog_Project/
 │   └── check_history.py   # helper: finds the first date with PM2.5 data
 ├── notebooks/eda.ipynb    # EDA notebook
 ├── figures/               # saved charts
-└── docs/                  # dashboard screenshots
+├── tests/                 # pytest tests for validate.py
+└── docs/                  # step documentation and dashboard screenshots
 ```
 
 ## How to run
@@ -128,8 +129,7 @@ more rows than the numbers above.
 
 ## Limitations
 
-- PM2.5 and weather values are modelled estimates from Open-Meteo (CAMS model), not ground-sensor readings.
-  They can under- or over-estimate local extremes.
+- - PM2.5 and weather values are modelled estimates from Open-Meteo, not ground-sensor readings.
 - Validation allows missing values; they are handled in the cleaning step.
 - Correlation between weather and PM2.5 does not show cause and effect.
 
