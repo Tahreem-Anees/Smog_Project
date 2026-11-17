@@ -43,6 +43,7 @@ flowchart LR
    (`clean_data` and `cleaning_log` tables).
 5. **EDA** (`src/eda.py`, `src/charts.py`, `notebooks/eda.ipynb`): six analysis parts, shown in the dashboard.
 
+Details for each step: [Extract and validate](docs/extract_validate.md), [Load and clean](docs/load_clean.md), [Data dictionary](docs/data_dictionary.md).
 ## Data
 
 - Cities: Lahore, Islamabad, Karachi, Peshawar
@@ -134,5 +135,5 @@ more rows than the numbers above.
 
 ## Development note
 
-The team used an AI assistant (Claude) while building the code. Every member ran the pipeline,
+The team used an AI assistant (Claude) while building the code and drafting the dashboard notes. Every member ran the pipeline,
 reviewed the code of their own part, and is responsible for explaining it.
