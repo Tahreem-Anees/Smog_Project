@@ -13,7 +13,7 @@ that a next-day PM2.5 forecasting model needs.
 
 ## Team
 
-| Member | Responsibility |
+| Member | Part Owners |
 |---|---|
 | Tahreem Anees | Overall architecture and pipeline flow, Streamlit dashboards, GitHub and deployment. EDA: daily trend, smog seasons, weather relationships, autocorrelation and baseline (7 charts) |
 | Sehrish Imran | EDA: time patterns (monthly, season, hourly, weekday), distributions, rows per year (7 charts) |
