@@ -50,9 +50,7 @@ Pydantic). The function `validate_rows(rows)` returns two lists:
 - **valid rows**: rows that follow every rule
 - **invalid rows**: the original row plus the reason it failed
 
-A bad row is never silently dropped. It is kept in the invalid list
-with its error message so we can see what went wrong.
-
+A bad row is kept in the invalid list with its error message. load.py saves only the number of invalid rows (in validation_log); in the last run there were 0.
 ### Rules for each field
 | Field | Required? | Unit | Allowed range |
 |---|---|---|---|
