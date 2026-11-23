@@ -1,5 +1,4 @@
-# Module: Open-Meteo Weather & Air Quality API Ingestion (4-Year Data Validation)
-# Developed & Maintained by: Noor Fatima (Roll No. 189)
+#Part owner (reviews and explains this part): Noor Fatima ROLL NO:2025-AI-189
 from datetime import datetime
 from typing import Optional
 

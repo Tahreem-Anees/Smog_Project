@@ -4,6 +4,7 @@ Programming for AI, Project 1 (ETL + EDA). University of Engineering and Technol
 
 **Live dashboards:** https://smogproject-7cv9tpdwdtclu8uh4yl4de.streamlit.app/
 
+If the app shows "This app has gone to sleep", click "Yes, get this app back up!" and wait about a minute.
 ## Problem
 
 Smog is a serious health issue in Pakistani cities, especially in winter, but ground-sensor
@@ -43,7 +44,9 @@ flowchart LR
    (`clean_data` and `cleaning_log` tables).
 5. **EDA** (`src/eda.py`, `src/charts.py`, `notebooks/eda.ipynb`): six analysis parts, shown in the dashboard.
 
-Details for each step: [Extract and validate](docs/extract_validate.md), [Load and clean](docs/load_clean.md), [Data dictionary](docs/data_dictionary.md).
+Details for each step:
+
+ [Extract and validate](docs/extract_validate.md), [Load and clean](docs/load_clean.md), [Data dictionary](docs/data_dictionary.md).
 ## Data
 
 - Cities: Lahore, Islamabad, Karachi, Peshawar
@@ -79,6 +82,8 @@ Average PM2.5 over the whole period, compared with the WHO 24-hour guideline of 
 ## Dashboards
 
 Built with Streamlit. Use the sidebar to switch between the two dashboards.
+Charts with hover and zoom: daily trend, smog seasons, day of week. The other charts are static images.
+
 
 1. **Pipeline and Data Quality:** how the data flows, pipeline numbers, per-city overview, data quality checks.
 2. **EDA:** daily trend, smog seasons, hour of day and weekday patterns, weather correlations,
@@ -110,6 +115,8 @@ Smog_Project/
 
 ## How to run
 
+Python 3.12 or newer is required.
+
 ```
 pip install -r requirements.txt
 streamlit run app.py
@@ -127,9 +134,16 @@ python src/clean.py    # build clean_data from raw_data
 Note: `extract.py` always fetches up to 7 days before today, so a new run will give slightly
 more rows than the numbers above.
 
+## Tests
+
+```
+pip install pytest
+python -m pytest
+```
+
 ## Limitations
 
-- - PM2.5 and weather values are modelled estimates from Open-Meteo, not ground-sensor readings.
+- PM2.5 and weather values are modelled estimates from Open-Meteo, not ground-sensor readings.
 - Validation allows missing values; they are handled in the cleaning step.
 - Correlation between weather and PM2.5 does not show cause and effect.
 
